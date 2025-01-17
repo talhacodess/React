@@ -1,4 +1,5 @@
-function Card(){
+function Card({courseName,courseDes}){
+
     return(
       <div className="relative max-w-lg p-8 border bg-black border-gray-100 shadow-xl rounded-xl">
       <span className="absolute right-4 top-4 rounded-full px-3 py-1.5 bg-green-100 text-green-600 font-medium text-xs">
@@ -21,13 +22,13 @@ function Card(){
           ></path>
         </svg>
 
-        <h5 className="mt-4 text-xl font-bold text-gray-300">Science of Chemstry</h5>
+        <h5 className="mt-4 text-xl font-bold text-gray-300">{courseName}</h5>
 
         <p className="mt-2 text-sm">
-          You can manage phone, email and chat conversations all from a single mailbox.
+        {courseDes}
         </p>
       </div>
     </div>
     )
-
+  }
 export default Card
